@@ -7,6 +7,8 @@ import { NavController } from 'ionic-angular';
 })
 export class TemperaturePage {
 
+  desired = 33;
+
   constructor(public navCtrl: NavController) {
 
   }

@@ -1,3 +1,16 @@
-page-home {
+page-temperature {
+  .temps {
+    margin-top: 3rem;
 
+    h1 {
+      margin: 4rem 0;
+    }
+    .circle {
+      font-size: 3rem;
+      background: rgb(255, 162, 0);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+      border-radius: 3rem;
+    }
+  }
 }
