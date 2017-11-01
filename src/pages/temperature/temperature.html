@@ -5,6 +5,11 @@
 </ion-header>
 
 <ion-content padding>
+
+  <div class="header" text-right>
+    <ion-icon name="home" color="black"></ion-icon>
+  </div>
+  
   <ion-card>
     <ion-card-header text-center>
       Temperatura en la habitación 1
@@ -21,7 +26,7 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-item>
+        <ion-item padding-top>
             <ion-range [(ngModel)]="desired" min="15" max="40">
               <ion-icon range-left small name="thermometer" color="danger"></ion-icon>
               <ion-icon range-right name="thermometer" color="danger"></ion-icon>

@@ -1,4 +1,8 @@
 page-temperature {
+  .header {
+    font-size: 6rem;
+    color: #c9c9c9;
+  }
   .temps {
     margin-top: 3rem;
 
@@ -11,6 +15,12 @@ page-temperature {
       padding: 1.2rem;
       margin-bottom: 1rem;
       border-radius: 3rem;
+      color: white;
     }
+    
+  }
+  .range-bar.range-bar-active {
+    background: rgb(255, 162, 0);
   }
 }
+
