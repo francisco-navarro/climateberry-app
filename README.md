@@ -13,3 +13,9 @@ $ ionic cordova platform add ios
 $ ionic cordova run ios
 $ ionic cordova run android
 ```
+
+### Trabajando en modo desarrollo
+
+```bash
+$ ionic serve
+```
