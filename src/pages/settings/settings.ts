@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SettingsService } from '../../app/services/settings.service';
 
 @Component({
   selector: 'page-settings',
@@ -7,8 +8,10 @@ import { NavController } from 'ionic-angular';
 })
 export class SettingsPage {
 
-  constructor(public navCtrl: NavController) {
+  values;
 
+  constructor(public navCtrl: NavController, private settings : SettingsService) {
+    this.values = settings.getProps();
   }
 
 }

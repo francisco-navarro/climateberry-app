@@ -1,11 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Settings
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <h2>API</h2>
+  <ion-item>
+      <ion-label fixed>HOST</ion-label>
+      <ion-input type="text" [(ngModel)]="values.API_HOST"></ion-input>
+    </ion-item>
 </ion-content>

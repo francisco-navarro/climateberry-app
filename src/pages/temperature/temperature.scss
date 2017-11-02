@@ -1,7 +1,10 @@
 page-temperature {
   .header {
-    font-size: 6rem;
     color: #c9c9c9;
+    font-size: 2.5rem;
+    ion-icon {
+      font-size: 6rem;
+    }
   }
   .temps {
     margin-top: 3rem;

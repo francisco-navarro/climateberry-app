@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TemperatureService } from './services/temperature.service';
+import { SettingsService } from './services/settings.service';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { TemperatureService } from './services/temperature.service';
     StatusBar,
     SplashScreen,
     TemperatureService,
+    SettingsService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
