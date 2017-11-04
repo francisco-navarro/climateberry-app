@@ -4,33 +4,41 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
-  <div class="header">
-      <span *ngIf="outside">{{outside}} º</span>
+  <div class="header" padding>
+      <span class="outside" *ngIf="outside" >
+        <span class="smaller" padding-right>exterior</span>
+        <span>
+          {{outside}} º
+        </span>
+      </span>
       <span float-right>
           <ion-icon name="home" color="black"></ion-icon>
       </span>
   </div>
   
   <ion-card>
-    <ion-card-header>
-      <h2 padding>Temperatura en la habitación 1</h2>
+    <ion-card-header padding-top>
+      <h2 class="gray">Temperatura</h2>
+      <h1>Habitacion 3</h1>
     </ion-card-header>
+    
+
     <ion-grid *ngIf="connected">
       <ion-row class="temps">
         <ion-col text-center>
-          <h1><span class="circle">{{desired}}</span></h1>
+          <temp-circle [temp]="desired"></temp-circle>
           <p>Deseada</p>
         </ion-col>
         <ion-col text-center>
-          <h1><span class="circle">{{actual}}</span></h1>
+          <temp-circle [temp]="actual"></temp-circle>
           <p>Actual</p>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-item padding-top>
-            <ion-range [(ngModel)]="desired" min="15" max="40" debounce="500" (ionChange)="setTemp()">
+            <ion-range [(ngModel)]="desired" min="5" max="40" debounce="500" (ionChange)="setTemp()">
               <ion-icon range-left small name="thermometer" color="danger"></ion-icon>
               <ion-icon range-right name="thermometer" color="danger"></ion-icon>
             </ion-range>
@@ -38,6 +46,6 @@
       </ion-row>
     </ion-grid>
 
-    <h3 *ngIf="!connected"  text-center>No conectado</h3>
+    <h3 *ngIf="!connected"  text-center padding>No conectado</h3>
   </ion-card>
 </ion-content>

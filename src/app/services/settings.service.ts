@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 export class SettingsService {
 
   values = {
-    API_HOST: '192.168.1.129:8080'
+    API_HOST: '/endpoints/'
   };
 
   constructor() {}

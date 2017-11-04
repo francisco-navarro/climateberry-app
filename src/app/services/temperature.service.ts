@@ -22,6 +22,6 @@ export class TemperatureService {
   }
 
   public getUri() {
-    return 'http://' + this.settings.get('API_HOST') + '/api/temperature';
+    return this.settings.get('API_HOST') + '/api/temperature';
   }
 }

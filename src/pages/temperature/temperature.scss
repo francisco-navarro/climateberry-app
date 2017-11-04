@@ -1,26 +1,27 @@
 page-temperature {
+
   .header {
-    color: #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    color: #9d9d9d;
     font-size: 2.5rem;
+
+    .outside {
+      display: flex;
+    }
+    .smaller {
+      font-size: 2rem;
+    }
     ion-icon {
       font-size: 6rem;
     }
   }
+  .gray {
+    color: rgb(100, 100, 100)
+  }
+
   .temps {
     margin-top: 3rem;
-
-    h1 {
-      margin: 4rem 0;
-    }
-    .circle {
-      font-size: 3rem;
-      background: rgb(255, 162, 0);
-      padding: 1.2rem;
-      margin-bottom: 1rem;
-      border-radius: 3rem;
-      color: white;
-    }
-    
   }
   .range-bar.range-bar-active {
     background: rgb(255, 162, 0);
@@ -28,5 +29,6 @@ page-temperature {
   .range-knob {
     background: rgb(255, 162, 0)!important;
   }
+
 }
 

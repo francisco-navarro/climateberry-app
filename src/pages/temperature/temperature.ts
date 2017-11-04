@@ -29,12 +29,15 @@ export class TemperaturePage {
   }
 
   refresh() {
+    console.log('TemperaturePage refresh');
     this.tempService.get().subscribe(value => {
       this.desired = Math.round(value.desired);
       this.actual = Math.round(value.actual);
       this.outside = Math.round(value.outside);
       this.connected = true;
-    }, error => this.connected = false);
+    }, error => {
+      this.connected = false
+    });
   }
 
 }

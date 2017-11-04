@@ -4,5 +4,11 @@
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "proxies": [
+    {
+      "path": "/endpoints",
+      "proxyUrl": "https://climateberry.herokuapp.com/"
+    }
+  ]
 }
