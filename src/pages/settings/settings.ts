@@ -11,7 +11,7 @@ export class SettingsPage {
   values;
 
   constructor(public navCtrl: NavController, private settings : SettingsService) {
-    this.values = settings.getProps();
+    this.values = this.settings.getProps();
   }
 
 }
