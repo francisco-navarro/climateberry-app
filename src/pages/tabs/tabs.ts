@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { TemperaturePage } from '../temperature/temperature';
-import { LightPage } from '../light/light';
+import { DashboardPage } from '../dashboard/dashboard';
 import { SettingsPage } from '../settings/settings';
 import { Events } from 'ionic-angular';
 
@@ -11,7 +11,7 @@ import { Events } from 'ionic-angular';
 export class TabsPage {
 
   tab1Root = TemperaturePage;
-  tab2Root = LightPage;
+  tab2Root = DashboardPage;
   tab3Root = SettingsPage;
 
   constructor(public events: Events) {

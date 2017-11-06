@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-light',
-  templateUrl: 'light.html'
+  selector: 'page-dashboard',
+  templateUrl: 'dashboard.html'
 })
-export class LightPage {
+export class DashboardPage {
 
   constructor(public navCtrl: NavController) {
 

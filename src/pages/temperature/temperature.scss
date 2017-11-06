@@ -19,6 +19,12 @@ page-temperature {
   .gray {
     color: rgb(100, 100, 100)
   }
+  .flex {
+    display: flex;
+  }
+  .space-between{
+    justify-content: space-between;
+  }
 
   .temps {
     margin-top: 3rem;

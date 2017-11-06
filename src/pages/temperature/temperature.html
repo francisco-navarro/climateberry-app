@@ -14,18 +14,19 @@
         </span>
       </span>
       <span float-right>
-          <ion-icon name="home" color="black"></ion-icon>
+          <ion-icon name="cloud-outline" color="black"></ion-icon>
       </span>
   </div>
   
   <ion-card>
-    <ion-card-header padding-top>
-      <h2 class="gray">Temperatura</h2>
+    <ion-card-header class="flex space-between" padding-top>
       <h1>Habitacion 3</h1>
+      <h1> <ion-icon name="power" color="danger"></ion-icon> </h1>      
     </ion-card-header>
     
 
     <ion-grid *ngIf="connected">
+      <h3>Termostato</h3>
       <ion-row class="temps">
         <ion-col text-center>
           <temp-circle [temp]="desired"></temp-circle>
