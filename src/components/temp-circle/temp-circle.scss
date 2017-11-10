@@ -3,12 +3,18 @@ temp-circle {
     font-size: 3rem;
     padding: 1.2rem;
     margin-bottom: 1rem;
-    border-radius: 3rem;
-    color: white;
-    width: 6.2rem;
+    border-radius: 5rem;
+    width: 9rem;
+    height: 9rem;
     display: inline-block;
     text-align: center;
     background: rgb(109, 109, 109);
+  }
+
+  .white {
+    background-color: white;
+    border-radius: 3rem;
+    padding: 1.5rem;
   }
 
   .color-0 {

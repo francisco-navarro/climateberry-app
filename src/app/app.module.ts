@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { ComponentsModule } from '../components/components.module';
 
-import { LightPage } from '../pages/light/light';
+import { DashboardPage } from '../pages/dashboard/dashboard';
 import { TemperaturePage } from '../pages/temperature/temperature';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -18,7 +18,7 @@ import { SettingsService } from './services/settings.service';
 @NgModule({
   declarations: [
     MyApp,
-    LightPage,
+    DashboardPage,
     TemperaturePage,
     SettingsPage,
     TabsPage
@@ -32,7 +32,7 @@ import { SettingsService } from './services/settings.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LightPage,
+    DashboardPage,
     TemperaturePage,
     SettingsPage,
     TabsPage

@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 export class SettingsService {
 
   values = {
-    API_HOST: '/endpoints/'
+    API_HOST: 'https://climateberry.herokuapp.com/'
   };
 
   constructor() {}
