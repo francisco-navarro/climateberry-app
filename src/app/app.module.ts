@@ -14,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TemperatureService } from './services/temperature.service';
 import { SettingsService } from './services/settings.service';
+import { AwsIotService } from './services/aws-iot.service';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { SettingsService } from './services/settings.service';
     SplashScreen,
     TemperatureService,
     SettingsService,
+    AwsIotService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

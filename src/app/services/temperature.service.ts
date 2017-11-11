@@ -6,11 +6,12 @@ import { SettingsService } from "./settings.service";
 import 'rxjs/add/operator/map'
 
 import { DeviceOptions } from "aws-iot-device-sdk";
+import { AwsIotService } from "./aws-iot.service";
 
 @Injectable()
 export class TemperatureService {
 
-  constructor(private http: Http, private settings : SettingsService) {}
+  constructor(private http: Http, private settings : SettingsService, private awsIot : AwsIotService) {}
 
   public get() : Observable<any> {
     return this.http.get(this.getUri())
