@@ -1,9 +1,14 @@
 page-temperature {
 
+  .top-space {
+    height: 2rem;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
-    color: #9d9d9d;
+    margin-top: 1rem;
+    color: rgb(210, 209, 209);
     font-size: 2.5rem;
 
     .outside {
@@ -29,11 +34,19 @@ page-temperature {
   .temps {
     margin-top: 3rem;
   }
+  .range .icon, .info-bottom {
+    color: #075CCA !important;
+  }
   .range-bar.range-bar-active {
-    background: rgb(255, 162, 0);
+    background: #075CCA;
   }
   .range-knob {
-    background: rgb(255, 162, 0)!important;
+    background: #075CCA!important;
+  }
+
+  .info-bottom  {
+    border-top: 1px solid rgb(220, 220, 220);
+    padding: 1rem;
   }
 
 }

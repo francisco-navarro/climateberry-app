@@ -1,6 +1,6 @@
 temp-circle {
   .circle {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding: 1.2rem;
     margin-bottom: 1rem;
     border-radius: 5rem;
@@ -12,8 +12,11 @@ temp-circle {
   }
 
   .white {
+    color: rgb(4, 56, 120);
     background-color: white;
-    border-radius: 3rem;
+    border-radius: 4rem;
+    min-width: 6.6rem;
+    min-height: 6.6rem;
     padding: 1.5rem;
   }
 

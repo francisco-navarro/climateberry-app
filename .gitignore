@@ -13,6 +13,7 @@ log.txt
 npm-debug.log*
 *.crt
 *.pem
+*.key
 
 .idea/
 .sourcemaps/

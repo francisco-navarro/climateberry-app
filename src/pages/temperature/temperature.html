@@ -6,6 +6,8 @@
 
 <ion-content>
 
+  <div class="top-space">&nbsp;</div>
+
   <div class="header" padding>
       <span class="outside" *ngIf="outside" >
         <span class="smaller" padding-right>exterior</span>
@@ -20,13 +22,12 @@
   
   <ion-card>
     <ion-card-header class="flex space-between" padding-top>
-      <h1>Habitacion 3</h1>
-      <h1> <ion-icon name="power" color="danger"></ion-icon> </h1>      
+      <h1>Habitación: Comedor</h1>
+      <h1> <ion-icon name="power"></ion-icon> </h1>      
     </ion-card-header>
     
 
     <ion-grid *ngIf="connected">
-      <h3 padding-left>Termostato</h3>
       <ion-row class="temps">
         <ion-col text-center>
           <temp-circle [temp]="desired"></temp-circle>
@@ -37,16 +38,29 @@
           <p>Actual</p>
         </ion-col>
       </ion-row>
-      <ion-row>
+      <ion-row padding-bottom>
         <ion-item padding-top>
             <ion-range [(ngModel)]="desired" min="5" max="40" debounce="500" (ionChange)="setTemp()">
-              <ion-icon range-left small name="thermometer" color="danger"></ion-icon>
-              <ion-icon range-right name="thermometer" color="danger"></ion-icon>
+              <ion-icon range-left small name="thermometer"></ion-icon>
+              <ion-icon range-right name="thermometer"></ion-icon>
             </ion-range>
           </ion-item>
       </ion-row>
     </ion-grid>
 
     <h3 *ngIf="!connected"  text-center padding>No conectado</h3>
+
+    <ion-grid>
+      <ion-row class="info-bottom">
+          <ion-col>
+            <ion-icon small name="flame"></ion-icon>
+            <span>&nbsp;heat</span>
+          </ion-col>
+          <ion-col text-right>
+            <ion-icon small name="speedometer"></ion-icon>
+            <span>&nbsp;auto</span>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
   </ion-card>
 </ion-content>
