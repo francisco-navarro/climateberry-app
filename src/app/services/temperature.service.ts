@@ -5,6 +5,8 @@ import { Observable } from "rxjs/Observable";
 import { SettingsService } from "./settings.service";
 import 'rxjs/add/operator/map'
 
+import { DeviceOptions } from "aws-iot-device-sdk";
+
 @Injectable()
 export class TemperatureService {
 
